@@ -93,6 +93,17 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+.range {
+  display: flex;
+  padding: 5px;
+}
+
+.setting {
+  margin: 5px;
+  text-align: ;
+  padding-bottom: 10px;
+}
+
 .float-right {
   float: right;
 }
