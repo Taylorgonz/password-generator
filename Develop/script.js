@@ -1,6 +1,25 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Generator functions  
+// Generating random lowercase letter
+function getRandomLower() {
+  return String.fromCharCode(Math.floor(Math.random() * 26)+ 97);
+}
+// Generating random upper case letter
+function getRandomUpper() {
+  return String.fromCharCode(Math.floor(Math.random() * 26)+ 65);
+}
+// Generating random number
+function getRandomNumber() {
+  return String.fromCharCode(Math.floor(Math.random() * 10)+ 48);
+}
+// Generationg random symbol
+function getRandomSymbol() {
+  const symbols= '!#$%&()*+,-./:;<=>?@\^_~';
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
