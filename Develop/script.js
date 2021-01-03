@@ -1,3 +1,19 @@
+// Dom elements
+const resultEl=document.ElementById('result')
+const lengthEl=document.ElementById('length')
+const uppercaseEl=document.ElementById('uppercase')
+const lowercaseEl=document.ElementById('lowercase')
+const numbersEl=document.ElementById('numbers')
+const symbolsEl=document.ElementById('symbols')
+const generateEl=document.ElementById('generate')
+ 
+const randomFunc ={
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  symbol: getRandomSymbol
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
