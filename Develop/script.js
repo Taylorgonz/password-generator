@@ -1,5 +1,5 @@
 // Dom elements
-const resultEl=document.getElementById('result')
+const resultEl=document.getElementById('password')
 const lengthEl=document.getElementById('length')
 const uppercaseEl=document.getElementById('uppercase')
 const lowercaseEl=document.getElementById('lowercase')
@@ -35,15 +35,31 @@ function generatePassword(lower, upper, number, symbol, length) {
   let generatedPassword = '';
 
   const typesCount=lower + upper + number +symbol;
-  console.log('typesCount: ', typesCount);
+  // console.log('typesCount: ', typesCount);
 
   const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item => Object.values(item)[0]);
 
-  console.log(typesArr);
+  // console.log(typesArr);
 
   if(typesCount === 0) {
-    alert('Please select at least one option!');
+    alert('Please select at least one option!')
 }
+
+for(let i=0; i<length; i+=typesCount) {
+  typesArr.forEach(type=> {
+    const funcName = Object.keys (type)[0];
+    
+    generatedPassword += randomFunc[funcName]();
+  });
+
+}
+
+  const finalPassword = generatedPassword.slice(0, length);
+
+  return finalPassword;
+}
+
+
 // Assignment Code
 // var generateBtn = document.querySelector("#generate");
 
