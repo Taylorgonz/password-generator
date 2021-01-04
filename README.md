@@ -16,10 +16,10 @@ Below I have a screenshots of the application.
 
 ## Usage
 This is a simple responsive sight and has
- -css
- -html
- -bootstrap
- -javascript
+ - css
+ - html
+ - bootstrap
+ - javascript
 
 ## Credits
 Credit to [Mike Fearnley](https://michaelfearnley.com/) and [Scott Byers](https://github.com/switch120)
