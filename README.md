@@ -1,93 +1,42 @@
-# 03 JavaScript: Password Generator
+# Password Generator
 
-## Your Task
+## Need a password? 
 
-This week’s homework requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+This is an easy to use password generator that allows you to create a password from 8-128 characters with options to include, at minimum 1 option, uppercase letters, lowercase letters, numbers, and special characters!
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+Below I have a screenshots of the application.
+![alt text](Assets/screenshot.png)
 
-## User Story
+## Instructions
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
-
-## Acceptance Criteria
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+- select the length of your password from 8-128 characters.
+- select 1 or more of the password parameters(lowercase, upppercase, numbers, symbols)
+- hit the "Generate password button!
 
 
-## Review
+## Usage
+This is a simple responsive sight and has
+ -css
+ -html
+ -bootstrap
+ -javascript
 
-You are required to submit the following for review:
+## Credits
+Credit to [Mike Fearnley](https://michaelfearnley.com/) and [Scott Byers](https://github.com/switch120)
 
-* The URL of the deployed application.
+as well as [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) youtube channel.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+and the UNH Fullstack Coding Bootcamp
 
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Links 
+Here is the link to the deployed site: https://taylorgonz.github.io/password-generator/
+## Contact
+
+if you want to contact me for any more questions here are my links!
+
+hello@taylorgonz.com
+<br>
+[Website](http://www.taylorgonz.com)
+
+## Licensing
+ [General Public License](https://opensource.org/licenses/GPL-2.0)
