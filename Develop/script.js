@@ -27,43 +27,35 @@ generateEl.addEventListener('click', () => {
 
 // Generate passwordd function
 function generatePassword(lower, upper, number, symbol, length) {
-  // 1.Initialize a password variable
-  // 2.Filter out unchecked types
-  // 3.loop over the length call a generator function for each type
-  // 4. add the final password to the password var and return
-
+  
+  // generated password variable
   let generatedPassword = '';
 
+  
   const typesCount=lower + upper + number +symbol;
-  // console.log('typesCount: ', typesCount);
 
   const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item => Object.values(item)[0]);
-
-  // console.log(typesArr);
 
   if(typesCount === 0) {
     alert('Please select at least one option!')
 }
-
-for(let i=0; i<length; i+=typesCount) {
-  typesArr.forEach(type=> {
-    const funcName = Object.keys (type)[0];
+  // loop to generate password based on input length
+  for(let i=0; i<length; i+=typesCount) {
+    typesArr.forEach(type=> {
+      const funcName = Object.keys (type)[0];
     
-    generatedPassword += randomFunc[funcName]();
+      generatedPassword += randomFunc[funcName]();
   });
 
 }
-
   const finalPassword = generatedPassword.slice(0, length);
 
   return finalPassword;
 }
 
 
-// Assignment Code
-// var generateBtn = document.querySelector("#generate");
+// Generator functions 
 
-// Generator functions  
 // Generating random lowercase letter
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26)+ 97);

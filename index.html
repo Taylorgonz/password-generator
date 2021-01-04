@@ -22,6 +22,7 @@
             <div class="card-header">
               <h2 class = 'd-flex justify-content-center'>Generate a Password</h2>
             </div>
+
           <!-- Password output area -->
           <div class="card-body">
             <textarea
@@ -31,11 +32,16 @@
             aria-label="Generated Password"
             ></textarea>
           </div>
+
           <!-- password length -->
-          <label>Password length (8-128)</label>
-			      <input type="number" id="length" min='8' max='128' value='10' />
+          <div class='col-md-6'>
+            <label class='passwordLength'>Password length (8-128)</label>
+              <input class="passwordLength"type="number" id="length" min='8' max='128' value='10' />
+          </div>
+
           <!-- input buttons -->
           <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
             <!-- uppercase input button -->
             <input type="checkbox" class="btn-check" id="uppercase" autocomplete="off">
             <label class="btn btn-outline-primary" for="uppercase">Include upercase letters</label>
@@ -53,7 +59,7 @@
           </div>
             <!-- Generate button  -->
           <div class="card-footer">
-            <button id="generate" class="btn">Generate Password</button>
+            <button id="generate" class="btn btn-primary">Generate Password</button>
           </div>
           </div>
         </div>
