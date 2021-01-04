@@ -1,7 +1,7 @@
-*{
+* {
   box-sizing: border-box;
 }
-
+/* setting page margins and height */
 html,
 body,
 .wrapper {
@@ -9,70 +9,66 @@ body,
   margin: 0;
   padding: 0;
 }
-
+/* setting font family and background color */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/* wrapper padding  */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/* header color setting */
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
-.card {
-  background-color: hsl(0, 0%, 100%);
+/* setting for the container with password generator inside */
+.box {
+  background-color: hsl(0, 0%, 76%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(0, 0%, 100%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  height: 450px;
 }
-
-.card-header{
+/* "Generate a Password" settings */
+.box-header{
   content: " ";
-  display: block;
+  display: center;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
-  margin: ;
+  margin: 5px;
 }
 
-.card-body {
+/* generated password box padding*/
+.password-output {
+  padding-top: 25px;
   min-height: 100px;
 }
 
-.card-footer {
+/* footer with generate password button */
+.box-footer {
   text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
+  content: relative;
+  display: center;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+  
 }
-
-
+/* button settings */
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -82,26 +78,7 @@ header {
   cursor: pointer;
 }
 
-/* button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-} */
-
-/* .range {
-  display: flex;
-  padding: 5px;
-}
-
-.setting {
-  margin: 5px;
-  text-align: ;
-  padding-bottom: 10px;
-}
-
-.float-right {
-  float: right;
-} */
-
+/* password output settings */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -117,7 +94,7 @@ header {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px solid #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;

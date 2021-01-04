@@ -48,8 +48,9 @@ function generatePassword(lower, upper, number, symbol, length) {
   });
 
 }
+// variable containing final variable
   const finalPassword = generatedPassword.slice(0, length);
-
+// outputting final variable
   return finalPassword;
 }
 
