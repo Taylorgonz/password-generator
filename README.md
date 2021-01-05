@@ -5,7 +5,7 @@
 This is an easy to use password generator that allows you to create a password from 8-128 characters with options to include, at minimum 1 option, uppercase letters, lowercase letters, numbers, and special characters!
 
 Below I have a screenshots of the application.
-![alt text](Assets/screenshot.png)
+![alt text](Assets/images/screenshot.png)
 
 ## Instructions
 
